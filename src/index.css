@@ -64,6 +64,33 @@ hr {
   opacity: 0.9;
   overflow-y: scroll;
 }
+.feed {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.prevFeed {
+  height: 70%;
+  width: 90%;
+}
+.prevFeed li {
+  margin-bottom: 5px;
+}
+.newFeed {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 25%;
+  width: 90%;
+}
+.newFeed textarea {
+  width: 80%;
+  height: 80%;
+  resize: none;
+}
 .grid {
   width: auto;
   height: auto;
@@ -132,7 +159,7 @@ hr {
   .navbar > button {
     height: 80px;
     width: 20%;
-    font-size: medium;
+    font-size: small;
   }
   .main {
     width: 100%;

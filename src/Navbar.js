@@ -29,7 +29,7 @@ const Navbar = ({ lng, disp, setDisp }) => {
         size="large"
         onClick={() => setDisp(3)}
       >
-        {lng === "en" ? "Galery" : "Galerija"}
+        {lng === "en" ? "Galery" : "Slike"}
       </Button>
       <Button
         color="info"
@@ -46,6 +46,14 @@ const Navbar = ({ lng, disp, setDisp }) => {
         onClick={() => setDisp(5)}
       >
         {lng === "en" ? "Contact" : "Kontakt"}
+      </Button>
+      <Button
+        color="info"
+        variant="contained"
+        size="large"
+        onClick={() => setDisp(6)}
+      >
+        {lng === "en" ? "Feed" : "Utisci"}
       </Button>
     </div>
   );

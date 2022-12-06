@@ -4,6 +4,7 @@ import Reserve from "./Reserve";
 import Galery from "./Galery";
 import Terms from "./Terms";
 import Contact from "./Contact";
+import Feedback from "./Feedback";
 const Frame = ({ lng, disp, setDisp }) => {
   return (
     <div className="frame">
@@ -17,6 +18,8 @@ const Frame = ({ lng, disp, setDisp }) => {
         <Terms lng={lng} />
       ) : disp === 5 ? (
         <Contact />
+      ) : disp === 6 ? (
+        <Feedback setDisp={setDisp} />
       ) : null}
     </div>
   );
