@@ -26,13 +26,15 @@ const Feedback = ({ setDisp }) => {
   }, []);
 
   const feedSubmit = async () => {
-    try {
-      await addDoc(rewRef, { date: new Date().toDateString(), feed: feed });
-    } catch (err) {
-      alert("Server error. Try again.");
-    } finally {
-      setDisp(0);
-      alert("Thank You for Your feedback...");
+    if (feed !== "") {
+      try {
+        await addDoc(rewRef, { date: new Date().toDateString(), feed: feed });
+      } catch (err) {
+        alert("Server error. Try again.");
+      } finally {
+        setDisp(0);
+        alert("Thank You for Your feedback...");
+      }
     }
   };
   return (
