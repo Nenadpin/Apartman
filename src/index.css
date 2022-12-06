@@ -78,6 +78,10 @@ hr {
 .prevFeed li {
   margin-bottom: 5px;
 }
+.prevFeed ul {
+  height: 100%;
+  overflow-y: scroll;
+}
 .newFeed {
   display: flex;
   flex-direction: row;
